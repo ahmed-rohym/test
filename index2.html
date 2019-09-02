@@ -8,386 +8,113 @@
             font-family: icon-font;
             src: url(https://static.kanbhala.com/insert/683b3273d0ab40b47bd308da3ac6abbf.ttf) format("truetype"), url(https://static.kanbhala.com/insert/683b3273d0ab40b47bd308da3ac6abbf.eot#iefix) format("embedded-opentype"), url(https://static.kanbhala.com/insert/683b3273d0ab40b47bd308da3ac6abbf.woff) format("woff"), url(https://static.kanbhala.com/insert/683b3273d0ab40b47bd308da3ac6abbf.svg#icon-font) format("svg")
         }
-
-        .action-reset:before,
-        .cachebusting:before,
-        .icon:before {
-            font-family: icon-font;
-            font-style: normal;
-            font-weight: 400;
-            font-variant: normal;
-            text-decoration: inherit;
-            text-rendering: optimizeLegibility;
-            text-transform: none;
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-font-smoothing: antialiased;
-            font-smoothing: antialiased
-        }
-
-        .action-add,
-        .action-pause,
-        .action-reset,
-        .action-resume,
-        .action-start {
-            color: #172b4d;
-            line-height: 20px;
-            font-size: 14px;
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
-            font-weight: 400;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            outline: none;
-            border: none;
-            background: none;
-            padding: 0;
-            display: block;
-            box-sizing: border-box;
-            height: 32px;
-            border-radius: 3px;
-            padding: 6px 12px;
-            white-space: nowrap;
-            transition-property: background-color;
-            transition-duration: 85ms;
-            transition-timing-function: ease;
-            cursor: pointer
-        }
-
-        .action-add,
-        .action-start {
-            background-color: #eaecef
-        }
-
-        .action-add:hover,
-        .action-start:hover {
-            background-color: #e1e4e9
-        }
-
-        .action-add:active,
-        .action-start:active {
-            background-color: #e4f0f6;
-            color: #0079bf
-        }
-
-        .action-pause {
-            background-color: #cf513d;
-            color: #fff
-        }
-
-        .action-pause:hover {
-            background-color: #eb5a46
-        }
-
-        .action-pause:active {
-            background-color: #933b27
-        }
-
-        .action-resume {
-            background-color: #5aac44;
-            color: #fff
-        }
-
-        .action-resume:hover {
-            background-color: #61bd4f
-        }
-
-        .action-resume:active {
-            background-color: #49852e
-        }
-
-        .action-pause,
-        .action-resume,
-        .action-start {
-            display: flex;
-            align-items: center;
-            padding-left: 6px
-        }
-
-        .action-pause>.icon,
-        .action-resume>.icon,
-        .action-start>.icon {
-            width: 20px;
-            height: 20px;
-            margin: 0 6px 0 0
-        }
-
-        .action-pause>.icon:before,
-        .action-resume>.icon:before,
-        .action-start>.icon:before {
-            font-size: 16px
-        }
-
-        @keyframes cycle_white {
-            0% {
-                color: #fff
-            }
-
-            50% {
-                color: hsla(0, 0%, 100%, .2);
-                animation-timing-function: ease
-            }
-
-            to {
-                color: #fff;
-                animation-timing-function: ease
-            }
-        }
-
-        body {
-            margin: 0
-        }
-
-        div {
-            display: flex
-        }
-
-        .cachebusting:before {
-            content: "\F102"
-        }
-
-        .action-start .icon:before {
-            content: "\F104"
-        }
-
-        .action-pause {
-            margin-right: 4px
-        }
-
-        .action-pause .icon {
-            animation: cycle_white 4s linear infinite
-        }
-
-        .action-pause .icon:before {
-            content: "\F105"
-        }
-
-        .action-resume {
-            margin-right: 4px
-        }
-
-        .action-resume .icon:before {
-            content: "\F101"
-        }
-
-        .action-add {
-            margin-right: 4px
-        }
-
-        .action-reset {
-            width: 32px;
-            padding: 0;
-            color: #42526e
-        }
-
-        .action-reset:hover {
-            color: #172b4d
-        }
-
-        .action-reset:before {
-            content: "\F103";
-            font-size: 16px
-        }
     </style>
 </head>
 
 <body>
-    <div></div>
     <script src="https://p.trellocdn.com/power-up.min.js"></script>
     <script>
-        ! function(e) {
-            var t = {};
+        ! function(t) {
+            var e = {};
 
-            function n(r) {
-                if(t[r]) return t[r].exports;
-                var o = t[r] = {
-                    i: r,
+            function n(o) {
+                if(e[o]) return e[o].exports;
+                var r = e[o] = {
+                    i: o,
                     l: !1,
                     exports: {}
                 };
-                return e[r].call(o.exports, o, o.exports, n), o.l = !0, o.exports
+                return t[o].call(r.exports, r, r.exports, n), r.l = !0, r.exports
             }
-            n.m = e, n.c = t, n.d = function(e, t, r) {
-                n.o(e, t) || Object.defineProperty(e, t, {
+            n.m = t, n.c = e, n.d = function(t, e, o) {
+                n.o(t, e) || Object.defineProperty(t, e, {
                     enumerable: !0,
-                    get: r
+                    get: o
                 })
-            }, n.r = function(e) {
-                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+            }, n.r = function(t) {
+                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(t, Symbol.toStringTag, {
                     value: "Module"
-                }), Object.defineProperty(e, "__esModule", {
+                }), Object.defineProperty(t, "__esModule", {
                     value: !0
                 })
-            }, n.t = function(e, t) {
-                if(1 & t && (e = n(e)), 8 & t) return e;
-                if(4 & t && "object" == typeof e && e && e.__esModule) return e;
-                var r = Object.create(null);
-                if(n.r(r), Object.defineProperty(r, "default", {
+            }, n.t = function(t, e) {
+                if(1 & e && (t = n(t)), 8 & e) return t;
+                if(4 & e && "object" == typeof t && t && t.__esModule) return t;
+                var o = Object.create(null);
+                if(n.r(o), Object.defineProperty(o, "default", {
                         enumerable: !0,
-                        value: e
-                    }), 2 & t && "string" != typeof e)
-                    for(var o in e) n.d(r, o, function(t) {
-                        return e[t]
-                    }.bind(null, o));
-                return r
-            }, n.n = function(e) {
-                var t = e && e.__esModule ? function() {
-                    return e.default
+                        value: t
+                    }), 2 & e && "string" != typeof t)
+                    for(var r in t) n.d(o, r, function(e) {
+                        return t[e]
+                    }.bind(null, r));
+                return o
+            }, n.n = function(t) {
+                var e = t && t.__esModule ? function() {
+                    return t.default
                 } : function() {
-                    return e
+                    return t
                 };
-                return n.d(t, "a", t), t
-            }, n.o = function(e, t) {
-                return Object.prototype.hasOwnProperty.call(e, t)
-            }, n.p = "", n(n.s = 6)
-        }([function(e, t, n) {}, , , , , , function(e, t, n) {
-            n(0), e.exports = n(7)
-        }, function(e, t, n) {
-            "use strict";
-            n.r(t);
-            n(8);
-            document.addEventListener("DOMContentLoaded", e => {
-                function t(e) {
-                    const t = Math.round(.001 * e);
-                    return t < 60 ? `${t}s` : t < 3600 ? `${Math.floor(t/60)}m` : `${Math.floor(t/3600)}h ${Math.floor(t/60%60)}m`
-                }
+                return n.d(e, "a", e), e
+            }, n.o = function(t, e) {
+                return Object.prototype.hasOwnProperty.call(t, e)
+            }, n.p = "", n(n.s = 1)
+        }([function(t, e, n) {}, function(t, e, n) {
+            n(0), t.exports = n(2)
+        }, function(t, e, n) {
+            TrelloPowerUp.initialize({
+                "card-badges": function(t, e) {
+                    const o = t => String(t).padStart(2, "0");
 
-                function n(e, t) {
-                    const n = [];
-                    for(let e in t) void 0 === t[e] && (n.push(e), delete t[e]);
-                    return (n.length > 0 ? e.remove("card", "private", n) : Promise.resolve(void 0)).then(() => e.set("card", "private", t)).then(() => Promise.resolve(t))
-                }
+                    function r(t) {
+                        const e = new Date(t);
+                        if(t % 864e5 < 864e5) {
+                            const t = e.getHours(),
+                                n = e.getMinutes();
+                            return `${o(t)}:${o(n)}`
+                        } {
+                            const t = e.getDate(),
+                                n = e.getMonth() + 1;
+                            return `${e.getFullYear()}-${o(n)}-${o(t)}`
+                        }
+                    }
 
-                function r(e) {
-                    const t = "type" in e ? e.type : "element";
-                    if("element" === t) return function(e) {
-                        const t = {
-                                title: "title",
-                                text: "textContent"
-                            },
-                            n = document.createElement("name" in e ? e.name : "div");
-                        if("children" in e)
-                            for(let t of e.children) n.appendChild(r(t));
-                        if("classes" in e)
-                            for(let t of e.classes) n.classList.add(t);
-                        for(let r in t) r in e && (n[t[r]] = e[r]);
-                        return n
-                    }(e);
-                    if("text" === t) return function(e) {
-                        return document.createTextNode("content" in e ? e.content : "")
-                    }(e);
-                    throw new Error
+                    function i(t) {
+                        const e = Math.round(.001 * t);
+                        return e < 60 ? `${e}s` : e < 3600 ? `${Math.floor(e/60)}m` : `${Math.floor(e/3600)}h ${Math.floor(e/60%60)}m`
+                    }
+                    return t.get("card", "private").then(t => "time" in t ? "active_since" in t ? [{
+                        icon: n(4),
+                        monochrome: !1,
+                        text: r(t.active_since),
+                        color: "red"
+                    }] : [{
+                        icon: n(3),
+                        monochrome: !1,
+                        text: i(t.time),
+                        color: null
+                    }] : [])
+                },
+                "card-back-section": function(t, e) {
+                    return {
+                        title: "Time",
+                        icon: n(5),
+                        monochrome: !1,
+                        content: {
+                            type: "iframe",
+                            url: t.signUrl("https://ahmed-rohym.github.io/test/index.html"),
+                            height: 35
+                        }
+                    }
                 }
-
-                function o(e, t) {
-                    const n = r({
-                        name: "button",
-                        classes: ["action-add", `action-add-${String(e)}`],
-                        children: [{
-                            type: "text",
-                            content: `+ ${String(e)}m`
-                        }]
-                    });
-                    return n.addEventListener("click", t.bind(null, e), !1), n
-                }
-
-                function i() {
-                    const e = r({
-                        name: "button",
-                        classes: ["action-reset"]
-                    });
-                    return e.addEventListener("click", e => {
-                        n(TrelloPowerUp.iframe(), {
-                            time: void 0,
-                            active_since: void 0
-                        }).then(e => a(document.querySelector("div"), l(e)))
-                    }, !1), e
-                }
-
-                function c(e) {
-                    const o = function(e = Date.now()) {
-                            return () => Date.now() - e
-                        }(e.active_since),
-                        i = r({
-                            name: "button",
-                            classes: ["action-pause"],
-                            title: "Pause",
-                            children: [{
-                                name: "span",
-                                classes: ["icon"]
-                            }, {
-                                type: "text",
-                                content: t(e.time + o())
-                            }]
-                        }),
-                        c = window.setInterval(() => {
-                            i.lastChild.textContent = t(e.time + o())
-                        }, 1e3);
-                    return i.addEventListener("click", t => {
-                        n(TrelloPowerUp.iframe(), {
-                            time: e.time + o(),
-                            active_since: void 0
-                        }).then(e => {
-                            s(e), window.clearInterval(c)
-                        })
-                    }, !1), [i]
-                }
-
-                function a(e, t) {
-                    for(let t of Array.from(e.childNodes)) e.removeChild(t);
-                    for(let n of t) e.appendChild(n)
-                }
-
-                function l(e) {
-                    return "time" in e ? "active_since" in e ? c(e) : function(e) {
-                        const c = r({
-                            name: "button",
-                            classes: ["action-resume"],
-                            title: "Resume",
-                            children: [{
-                                name: "span",
-                                classes: ["icon"]
-                            }, {
-                                type: "text",
-                                content: t(e.time)
-                            }]
-                        });
-                        c.addEventListener("click", t => {
-                            n(TrelloPowerUp.iframe(), {
-                                time: e.time,
-                                active_since: Date.now()
-                            }).then(s)
-                        }, !1);
-                        const a = t => {
-                            e.time += 1e3 * t * 60, n(TrelloPowerUp.iframe(), e).then(s)
-                        };
-                        return [c, o(5, a), o(15, a), i()]
-                    }(e) : function() {
-                        const e = r({
-                            name: "button",
-                            classes: ["action-start"],
-                            title: "Start time-tracking",
-                            children: [{
-                                name: "span",
-                                classes: ["icon"]
-                            }, {
-                                type: "text",
-                                content: "Start Timer"
-                            }]
-                        });
-                        return e.addEventListener("click", e => {
-                            n(TrelloPowerUp.iframe(), {
-                                time: 0,
-                                active_since: Date.now()
-                            }).then(s)
-                        }, !1), [e]
-                    }()
-                }
-
-                function s(e) {
-                    a(document.querySelector("div"), l(e))
-                }
-                TrelloPowerUp.iframe().get("card", "private").then(s)
-            }, !1)
-        }, function(e, t, n) {}]);
+            })
+        }, function(t, e) {
+            t.exports = "https://static.kanbhala.com/insert/0e917ba96a44d8bf9f0349d0559e983d.svg"
+        }, function(t, e) {
+            t.exports = "https://static.kanbhala.com/insert/136e7f5947ef38b94741d865c9371f95.svg"
+        }, function(t, e) {
+            t.exports = "https://static.kanbhala.com/insert/ea8ebd0b46b63c0da8d0b42b2d91d8b5.svg"
+        }]);
     </script>
 </body>
 
